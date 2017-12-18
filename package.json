@@ -5,6 +5,7 @@
 	"dependencies": {
 		"@storybook/cli": "^3.2.17",
 		"classnames": "^2.2.5",
+		"enzyme": "^3.2.0",
 		"husky": "^0.14.3",
 		"lint-staged": "^6.0.0",
 		"prettier": "^1.9.2",
@@ -29,8 +30,8 @@
 		"*.{js,jsx,json,scss}": ["prettier --config .prettierrc --write", "git add"]
 	},
 	"devDependencies": {
-		"@storybook/react": "^3.2.17",
 		"@storybook/addon-actions": "^3.2.17",
-		"@storybook/addon-links": "^3.2.17"
+		"@storybook/addon-links": "^3.2.17",
+		"@storybook/react": "^3.2.17"
 	}
 }
