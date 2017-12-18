@@ -20,9 +20,10 @@
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject",
 		"precommit": "lint-staged",
-		"prepush": "yarn test",
+		"prepush": "yarn test:single-run",
 		"storybook": "start-storybook -p 9009 -s public",
-		"build-storybook": "build-storybook -s public"
+		"build-storybook": "build-storybook -s public",
+		"test:single-run": "CI=true yarn test"
 	},
 	"lint-staged": {
 		"*.{js,jsx,json,scss}": ["prettier --config .prettierrc --write", "git add"]
